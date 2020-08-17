@@ -9,11 +9,11 @@ app.listen(PORT, () => {
 });
 
 app.get("/url", (req, res, next) => {
-    setTimeout(function1, 50000);
+    sleepFor(20000);
     res.json(["Tony","Lissa","Michael","Ginger","Food"]);
    });
 
-   function function1() {
-    // stuff you want to happen right away
-    console.log('Welcome to My Console,');
+   function sleepFor( sleepDuration ){
+    var now = new Date().getTime();
+    while(new Date().getTime() < now + sleepDuration){ /* do nothing */ } 
 }
