@@ -15,7 +15,7 @@ app.listen(PORT, () => {
 
 app.get("/url", (req, res, next) => {
     res.json(["Tony","Lissa","Michael","Ginger","Food"]);
-    setTimeout(function2, 5000);
+    setTimeout(function2, 50000);
    });
 
    function function1() {
