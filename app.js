@@ -2,11 +2,6 @@ var express = require("express");
 var app = express();
 const PORT = process.env.PORT || 5000
 
-function sleep(ms) {
-    return new Promise((resolve) => {
-      setTimeout(resolve, ms);
-    });
-  } 
 
 app.listen(PORT, () => {
  console.log("Server running on port 3000");
@@ -14,7 +9,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/url", (req, res, next) => {
-    setTimeout(function2, 50000);
+    setTimeout(function1, 50000);
     res.json(["Tony","Lissa","Michael","Ginger","Food"]);
    });
 
