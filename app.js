@@ -15,6 +15,10 @@ app.listen(PORT, () => {
 
 app.get("/url", (req, res, next) => {
     res.json(["Tony","Lissa","Michael","Ginger","Food"]);
-    await sleep(5000);
+    setTimeout(function2, 5000);
    });
 
+   function function1() {
+    // stuff you want to happen right away
+    console.log('Welcome to My Console,');
+}
