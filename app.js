@@ -17,5 +17,5 @@ app.get("/url", (req, res, next) => {
 
    function sleepFor( sleepDuration ){
     var now = new Date().getTime();
-    while(new Date().getTime() < now + sleepDuration){ console.log('server execution time:' sleepDuration) } 
+    while(new Date().getTime() < now + sleepDuration){ console.log('server execution time:' + sleepDuration) } 
 }
