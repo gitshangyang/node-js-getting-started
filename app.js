@@ -11,6 +11,7 @@ app.listen(PORT, () => {
 app.get("/url", (req, res, next) => {
     sleepFor(5000);
     res.json(["Tony","Lissa","Michael","Ginger","Food"]);
+    res.setTimeout(3000);
    });
 
    function sleepFor( sleepDuration ){
