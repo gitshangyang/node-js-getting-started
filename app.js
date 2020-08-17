@@ -13,7 +13,7 @@ app.get("/url", (req, res, next) => {
     console.log('server execution time:1000')
     res.setTimeout(3000);
     sleepFor(10000);
-    console.log('server execution time: 10000')
+    console.log('server execution time: 20000')
     res.json(["Tony","Lissa","Michael","Ginger","Food"]);
    });
 
