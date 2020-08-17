@@ -9,6 +9,5 @@ app.listen(PORT, () => {
 });
 
 app.get("/url", (req, res, next) => {
-    await sleep(10000);
     res.json(["Tony","Lissa","Michael","Ginger","Food"]);
    });
