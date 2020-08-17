@@ -12,3 +12,9 @@ app.get("/url", (req, res, next) => {
     res.json(["Tony","Lissa","Michael","Ginger","Food"]);
     await sleep(5000);
    });
+
+   function sleep(ms) {
+    return new Promise((resolve) => {
+      setTimeout(resolve, ms);
+    });
+  } 
