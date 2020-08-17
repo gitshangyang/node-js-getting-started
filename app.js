@@ -9,7 +9,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/url", (req, res, next) => {
-    sleepFor(20000);
+    sleepFor(5000);
     res.json(["Tony","Lissa","Michael","Ginger","Food"]);
    });
 
